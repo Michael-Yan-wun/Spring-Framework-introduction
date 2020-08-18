@@ -1,4 +1,4 @@
-# <img src="images/spring-logo.png" width="32" height="32"> Spring-Framework 入門教學
+# <img src="images/spring-logo.png" width="48" height="48"> Spring-Framework 入門教學
 ## 一、Spring Framework 簡介
 ### 1. Spring Framework 是甚麼?
 ### 2. Spring 的起源
