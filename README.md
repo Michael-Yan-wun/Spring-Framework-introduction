@@ -69,7 +69,7 @@
 ### 4. 練習 -- 發送訊息給指定主題訂閱者
 
 ## 十一、Spring Web MVC
-### <img src="images/spring-mvc.png">
+### <img src="images/spring-mvc.jpg">
 
 ## 十二、Spring Security
 
