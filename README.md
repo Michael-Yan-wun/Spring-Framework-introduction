@@ -19,7 +19,8 @@
 
 ## 三、Spring Boot
 ### 1.Spring Boot 簡介
-### 2.練習 - 建立一個 Spring Boot 專案
+### 2.教程 - 建立一個 Spring Boot 專案 
+### [參考資料](https://matthung0807.blogspot.com/2018/03/springbootweb.html/ "教學網站及範例")
 ### <img src="images/spring-boot.png">
 
 ## 四、Dependency Injection
@@ -79,7 +80,7 @@
 #### ○ 認證: 確保使用者人如其名。Spring Security提供認證的機制有Http Basic, Form Based … 等。
 #### ○ 授權: 確保使用者僅可存取允許的資源。Spring Security提供幾種授權的層級，有http請求、http方法、物件等。
 #### <img src="images/spring-security-authenticate.jpg">
-### 2. 範例說明
+### 2. 範例說明:
 ### 3. 練習 -- 建立一個專案，使用Spring Security 實作 admin、user 角色註冊、驗證及權限管理機制
 
 ## 十三、Spring Batch
@@ -101,4 +102,5 @@
 #### ItemWriter     用來輸出資料的介面
 #### <img src="images/spring-batch-component.png">
 #### 一個Job有一個或多個Step組成，Step有讀、處理、寫三部分操作組成；通過JobLauncher啟動Job，啟動時從JobRepository獲取Job Execution；當前執行的Job及Step的結果及狀態儲存在JobRepository中。
-### 3. 範例說明: Springboot整合Spring Batch 的 一個 [HelloSpringBatch Demo]: https://github.com/code-not-found/spring-batch/tree/master/spring-batch-hello-world/ (源代碼) 
+### 3. 範例說明: Springboot整合Spring Batch 的 一個 [HelloSpringBatch Demo](https://github.com/code-not-found/spring-batch/tree/master/spring-batch-hello-world/ "源代碼") 
+
