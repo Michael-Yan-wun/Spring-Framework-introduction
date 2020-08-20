@@ -99,6 +99,6 @@
 #### ItemReader     用來讀取資料的介面
 #### ItemProcessor  用來處理資料的介面
 #### ItemWriter     用來輸出資料的介面
-#### <img src="images/spring-batch-component.jpg">
+#### <img src="images/spring-batch-component.jpeg">
 #### 一個Job有一個或多個Step組成，Step有讀、處理、寫三部分操作組成；通過JobLauncher啟動Job，啟動時從JobRepository獲取Job Execution；當前執行的Job及Step的結果及狀態儲存在JobRepository中。
 ### 3. 範例說明: Springboot整合Spring Batch 的 一個HelloSpringBatch Demo 
