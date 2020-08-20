@@ -12,11 +12,10 @@
 ### 4. Spring 版本歷史
 #### <img src="images/spring-ejb-timeline.png">
 
-
 ### 5. Spring 的體系架構
 #### <img src="images/structure.png">
 
-##### (1) Core Container
+#### (1) Core Container
 ##### Core Container（核心容器）包含有Core、Beans、Context和Expression Language模塊。
 ##### Core和Beans模塊是框架的基礎部分，提供IoC（轉控制）和依賴注入特性。
 ##### 這裡的基礎概念是BeanFactory，它提供對Factory模式的經典實現來消除對程序性單例模式的需要，並真正地允許你從程序邏輯中分離出依賴關係和配置。
@@ -31,7 +30,7 @@
 ##### 該語言支持設置/獲取屬性的值，屬性的分配，方法的調用，訪問數組上下文（accessiong the context of arrays）、容器和索引器、
 ##### 邏輯和算術運算符、命名變量以及從Spring的IoC容器中根據名稱檢索對象。它也支持list投影、選擇和一般的list聚合。
 
-##### (2) Data Access/Integration
+#### (2) Data Access/Integration
 ##### Data Access/Integration層包含JDBC、ORM、OXM、JMS和Transaction模塊。
 ##### JDBC模塊提供了一個JDBC抽象層，它可以消除冗長的JDBC編碼和解析資料庫廠商特有的錯誤代碼。這個模塊包含了Spring對JDBC數據訪問進行封裝的所有類。
 ##### ORM模塊為流行的對象-關係映射API，如JPA、JDO、Hibernate、iBatis等，提供了一個交互層。
@@ -39,38 +38,58 @@
 ##### Spring框架插入了若干個ORM框架，從而提供了ORM的對象關係工具，其中包括JDO、Hibernate和iBatisSQL Map。
 ##### 所有這些都遵從Spring的通用事務和DAO異常層次結構。
 ##### OXM模塊提供了一個對Object/XML映射實現的抽象層，Object/XML映射實現包括JAXB、Castor、XMLBeans、JiBX和XStream。
-##### JMS（Java Messaging Service）模塊主要包含了一些製造和消費消息的特性。
+##### JMS（Java Messaging Service）模塊主要包含了一些發布和接收消息的特性。
 ##### Transaction模塊支持編程和聲明性的事務管理，這些事務類必須實現特定的接口，並且對所有的POJO都適用。
 
-##### (3) Web
+#### (3) Web
 ##### Web上下文模塊建立在應用程式上下文模塊之上，為基於Web的應用程式提供了上下文。
 ##### 所以，Spring框架支持與Jakarta Struts的集成。Web模塊還簡化了處理大部分請求以及將請求參數綁定到域對象的工作。
 ##### Web層包含了Web、Web-Servlet、Web-Struts和Web-Porlet模塊，具體說明如下。
 ##### Web模塊：提供了基礎的面向Web的集成特性。例如，多文件上傳、使用servlet listeners初始化IoC容器以及一個面向Web的應用上下文。
 ##### 它還包含Spring遠程支持中Web的相關部分。
-##### Web-Servlet模塊web.servlet.jar：該模塊包含Spring的model-view-controller（MVC）實現。
+##### Web-Servlet模塊：該模塊包含Spring的model-view-controller（MVC）實現。
 ##### Spring的MVC框架使得模型範圍內的代碼和web forms之間能夠清楚地分離開來，並與Spring框架的其他特性集成在一起。
 ##### Web-Struts模塊：該模塊提供了對Struts的支持，使得類在Spring應用中能夠與一個典型的Struts Web層集成在一起。注意，該支持在Spring 3.0中已被棄用。
 ##### Web-Porlet模塊：提供了用於Portlet環境和Web-Servlet模塊的MVC的實現。
 
-##### (4) AOP
+#### (4) AOP
 ##### AOP模塊提供了一個符合AOP聯盟標準的面向切面編程的實現，它讓你可以定義例如方法攔截器和切點，從而將邏輯代碼分開，降低它們之間的耦合性。
 ##### 利用source-level的元數據功能，還可以將各種行為信息合併到你的代碼中，這有點像.Net技術中的attribute概念。
-##### 通過配置管理特性，Spring AOP模塊直接將面向切面的編程功能集成到了Spring框架中，所以可以很容易地使Spring框架管理的任何對象支持AOP。
-##### Spring AOP模塊為基於Spring的應用程式中的對象提供了事務管理服務。通過使用Spring AOP，不用依賴EJB組件，就可以將聲明性事務管理集成到應用程式中。
-##### Aspects模塊提供了對AspectJ的集成支持。
-##### Instrumentation模塊提供了class instrumentation支持和classloader實現，使得可以在特定的應用伺服器上使用。
+##### 通過配置管理特性，Spring AOP 模塊直接將面向切面的編程功能集成到了Spring框架中，所以可以很容易地使Spring框架管理的任何對象支持AOP。
+##### Spring AOP 模塊為基於Spring的應用程式中的對象提供了事務管理服務。通過使用Spring AOP，不用依賴EJB組件，就可以將聲明性事務管理集成到應用程式中。
+##### Aspects 模塊提供了對 AspectJ 的集成支持。
+##### Instrumentation 模塊提供了class instrumentation支持和classloader實現，使得可以在特定的應用伺服器上使用。
 
-##### (5) Test
+#### (5) Test
 ##### Test模塊支持使用JUnit和TestNG對Spring組件進行測試。
 
 ## 二、Spring 元件與 IOC 容器
 ### 1. 什麼是 Spring 元件
+#### 在 Java 類別加上特定的標記，將會被視為「元件」，例如「@Controller」與「@Service」標記就是。
+
 ### 2. 什麼是 IOC 容器
-### 3. 元件的標記
-### 4. 元件的注入
-### 5. 元件的依賴
+#### IOC（Inverse of Control）：控制反轉，控制反轉模式（也稱作依賴性介入）的基本概念是：不創建物件，但是描述創建它們的方式，將物件的建立權反轉給（交給）IOC 容器。
+#### 在代碼中不直接與物件和服務連接，但在配置文件中描述哪一個組件需要哪一項服務。
 ### <img src="images/ioc.jpg">
+
+### 3. 範例說明: 
+    class Student{
+      Address address;
+      Student(){
+        address=new Address();
+      }
+    }
+    
+### 上面的示例代碼顯示了Student和Address之間的依賴關係。你可以說學生和地址緊密相連。
+### IoC使代碼鬆散耦合。 上面使用的例子可以重做如下:
+    class Student{
+      Address address;
+      Student(Address address) {
+        this.address=address;
+      }
+    }
+
+
 
 ## 三、Spring Boot
 ### 1.Spring Boot 簡介
