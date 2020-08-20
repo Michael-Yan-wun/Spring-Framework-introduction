@@ -101,4 +101,4 @@
 #### ItemWriter     用來輸出資料的介面
 #### <img src="images/spring-batch-component.png">
 #### 一個Job有一個或多個Step組成，Step有讀、處理、寫三部分操作組成；通過JobLauncher啟動Job，啟動時從JobRepository獲取Job Execution；當前執行的Job及Step的結果及狀態儲存在JobRepository中。
-### 3. 範例說明: Springboot整合Spring Batch 的 一個 [HelloSpringBatch Demo]: https://github.com/code-not-found/spring-batch/tree/master/spring-batch-hello-world "源代碼" 
+### 3. 範例說明: Springboot整合Spring Batch 的 一個 [HelloSpringBatch Demo]: https://github.com/code-not-found/spring-batch/tree/master/spring-batch-hello-world/ (源代碼) 
