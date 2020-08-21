@@ -123,14 +123,14 @@
 ### 1. 什麼是 AOP (面向切面編程)?
 #### AOP全名為Aspect-Oriented Programming，有關於AOP的許多名詞術語都過於抽象，單從字面上並不容易理解其名詞意義。
 #### 簡單得說，它只是一個攔截器攔截的一些過程，例如，當一個方法執行，Spring AOP 可以劫持一個執行的方法，在方法執行之前或之後新增額外的功能。
-#### <img src="images/AopConcept-1.jpg">
+#### <img src="images/AOPConcept-1.jpg">
 #### 在Spring AOP中，有 4 種型別通知(Advices)的支援：
 #### (1)@Before:通知(Advice)之前 - 該方法執行前執行
 #### (2)@After:通知(Advice)返回之後 – 該方法執行後執行，該方法返回一個結果
 #### (3)@AfterReturning:通知(Advice)執行後 - 該方法執行後並擷取返回值後執行。
 #### (4)@AfterThrowing:通知(Advice)丟擲之後 – 該方法丟擲異常後執行。
 #### (5)@Around:環繞通知 – 在執行的前後插入執行。
-#### <img src="images/AopConcept-2.jpg">
+#### <img src="images/AOPConcept-2.jpg">
 
 ### 2. AOP 範例說明 - [Github 連結](https://github.com/RameshMF/spring-aop-tutorial/ "範例連結")
 ### 3. 練習 - 使用 AOP 進行日誌記錄
