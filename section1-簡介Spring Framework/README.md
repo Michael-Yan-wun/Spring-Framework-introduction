@@ -1,5 +1,4 @@
-# <img src="images/spring-logo.png" width="48" height="48"> Spring-Framework 入門教學
-## 一、Spring Framework 簡介
+# <img src="../images/spring-logo.png" width="48" height="48"> 一、Spring Framework 簡介
 ### 1. Spring Framework 是甚麼?
 #### Spring Framework 是一個開源的Java／Java EE全功能棧（full-stack）的應用程式框架
 ### <img src="../images/ecosys.png">
