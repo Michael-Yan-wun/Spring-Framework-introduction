@@ -1,8 +1,7 @@
-# <img src="images/spring-logo.png" width="48" height="48"> Spring-Framework 入門教學
-## 一、Spring Framework 簡介
+# <img src="../images/spring-logo.png" width="48" height="48"> 一、Spring Framework 簡介
 ### 1. Spring Framework 是甚麼?
 #### Spring Framework 是一個開源的Java／Java EE全功能棧（full-stack）的應用程式框架
-### <img src="images/ecosys.png">
+### <img src="../images/ecosys.png">
 ### 2. Spring 的起源
 #### Spring是於2003年興起的一個輕量級的Java開發框架，由Rod Johnson在其著作Expert One-On-One J2EE Development and Design中闡述的部分理念和原型衍生而來。
 
@@ -10,10 +9,10 @@
 #### Spring Framework 作為一個優秀的開源框架，是為了解決企業應用程式開發複雜性而創建的。框架的主要優勢之一就是其分層架構，分層架構允許您選擇使用哪一個組件，同時為 J2EE 應用程式開發提供集成的框架。
 
 ### 4. Spring 版本歷史
-#### <img src="images/spring-ejb-timeline.png">
+#### <img src="../images/spring-ejb-timeline.png">
 
 ### 5. Spring 的體系架構
-#### <img src="images/structure.png">
+#### <img src="../images/structure.png">
 
 #### (1) Core Container
 ##### Core Container（核心容器）包含有Core、Beans、Context和Expression Language模塊。
