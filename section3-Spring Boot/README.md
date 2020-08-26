@@ -7,4 +7,4 @@
 
 ### 2.教程 - 建立一個 Spring Boot 專案 
 ### [參考資料](https://matthung0807.blogspot.com/2018/03/springbootweb.html/ "教學網站及範例")
-### <img src="images/spring-boot.png">
+### <img src="../images/spring-boot.png">
