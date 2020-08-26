@@ -16,7 +16,7 @@
 #### ○ Proxy: 一個類被 AOP 織入 advice, 就會產生一個結果類, 它是融合了原類和增強邏輯的代理類.在 Spring AOP 中, 一個 AOP 代理是一個 JDK 動態代理物件或 CGLIB 代理物件.
 #### ○ Weave: Advice被應用至物件之上的過程稱之為織入（Weave），在AOP中織入的方式有幾個時間點：編譯時期（Compile time）、類別載入時期（Classload time）、執行時期（Runtime）。
 #### Spring 採用動態代理織入(執行時期), 而AspectJ採用編譯器織入(編譯時期)和類裝載期織入(類別載入時期)
-#### <img src="images/AOPConcept-1.jpg">
+#### <img src="../images/AOPConcept-1.jpg">
 #### 在Spring AOP中，有 5 種型別通知(Advices)：
 #### (1)@Before:通知(Advice)之前 - 該方法執行前執行
 #### (2)@After:通知(Advice)返回之後 – 該方法執行後執行，該方法返回一個結果
@@ -24,7 +24,7 @@
 #### (4)@AfterThrowing:通知(Advice)丟擲之後 – 該方法丟擲異常後執行。
 #### (5)@Around:環繞通知 – 在執行的前後插入執行。
 #### 結合動態代理的實例，將以上介紹過的AOP相關名詞具體的使用圖片來加以表示，有助於您對每一個名詞的理解與認識：
-#### <img src="images/AOPConcept-2.jpg">
+#### <img src="../images/AOPConcept-2.jpg">
 
 ### 2. AOP 範例說明 - [Github 連結](https://github.com/RameshMF/spring-aop-tutorial/ "範例連結")
 ### 3. 練習 - 使用 AOP 進行日誌記錄
