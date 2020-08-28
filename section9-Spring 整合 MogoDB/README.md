@@ -18,3 +18,4 @@
 ##### <img src="../images/mongo-register.jpg">
 #### (3) Login and Build a Cluster (Free)
 ##### <img src="../images/mongodb-cluster.jpg">
+##### <img src="../images/mongodb-cluster-1.jpg">
