@@ -36,4 +36,4 @@
 #### <img src="../images/AOPConcept-2.jpg">
 
 ### 2. AOP 範例說明 - [Github 連結](https://github.com/RameshMF/spring-aop-tutorial/ "範例連結")
-### 3. 練習 - 以學生資料管理專案為例，使用 AOP 進行日誌記錄，記錄 User 每個操作內容及時間。
+### 3. 練習 - 以學生資料管理專案為例，使用 AOP 進行日誌記錄， User 每個操作後記錄內容及時間。
