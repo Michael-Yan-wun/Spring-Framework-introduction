@@ -16,3 +16,5 @@
 #### (1) [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Atlas")
 #### (2) 註冊:
 ##### <img src="../images/mongo-register.jpg">
+#### (3) Login and Build a Cluster (Free)
+##### <img src="../images/mongodb-cluster.jpg">
