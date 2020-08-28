@@ -15,4 +15,4 @@
 ### 2. 練習 -- 註冊 Cloud MongoDB 帳號並建立一個專案Cluster 以及 Collection , 學生資料表,並用 Spring Data MongoDB 連線存取學生資料 
 #### (1) [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Atlas")
 #### (2) 註冊:
-##### <img src="images/mongo-register.jpg">
+##### <img src="../images/mongo-register.jpg">
