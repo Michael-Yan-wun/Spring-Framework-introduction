@@ -6,5 +6,4 @@
 ### <img src="../images/spring-boot.png">
 
 ### 2.範例教程 - 建立一個 Spring Boot 專案 
-### [範例連結](https://spring.io/guides/gs/spring-boot/ "Spring Boot start example")
 ### [參考資料](https://kknews.cc/zh-tw/code/qxmpyvb.html/ "教學網站及範例")
