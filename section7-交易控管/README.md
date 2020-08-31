@@ -11,14 +11,14 @@
 #### Spring並不直接管理交易，而是提供了多種交易管理器 ，他們將交易管理的職責委託給Hibernate或者JPA等持久化機制所提供的相關平臺框架的交易來實現。 
 #### Spring交易管理器的介面是： org.springframework.transaction.PlatformTransactionManager ，通過這個介面，Spring為各個平臺如JDBC、Hibernate等都提供了對應的交易管理器，但是具體的實現就是各個平臺自己的事情了。
 #### PlatformTransactionManager介面中定義了三個方法：
-	Public interface PlatformTransactionManager(){  
-		// Return a currently active transaction or create a new one, according to the specified propagation behavior（根據指定的傳播行為，返回當前活動的事務或建立一個新事務。）
+	Public interface PlatformTransactionManager()...{  
+		// Return a currently active transaction or create a new one, according to the specified propagation behavior（根據指定的傳播行為，返回當前活動的交易或建立一個新交易。）
 		TransactionStatus getTransaction(TransactionDefinition definition) throws TransactionException; 
 		
-    // Commit the given transaction, with regard to its status（使用事務目前的狀態提交事務）
+		// Commit the given transaction, with regard to its status（使用交易目前的狀態進行提交）
 		Void commit(TransactionStatus status) throws TransactionException;  
 		
-    // Perform a rollback of the given transaction（對執行的事務進行回滾）
+		// Perform a rollback of the given transaction（對執行的交易進行回滾）
 		Void rollback(TransactionStatus status) throws TransactionException;  
 	}
 
