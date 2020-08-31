@@ -7,5 +7,5 @@
 #### <img src="../images/JMSQueue.png">
 ####  ○ Publish/Subscribe(Pub/Sub) : 發布訂閱模型
 #### <img src="../images/JMSTopic.png">
-### 3. 範例說明
+### 3. [範例說明](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/303015/ "Spring Boot + JMS + ActiveMQ")
 ### 4. 練習 -- 發送訊息給指定主題訂閱者
