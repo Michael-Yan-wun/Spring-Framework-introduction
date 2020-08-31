@@ -13,5 +13,5 @@
 #### 目的是支援JPA的數據訪問層(Data Access Layer)，以精簡及減少編寫SQL代碼來改善開發者的開發效率
 #### <img src="../images/spring-data-jpa.jpg">
 
-### 2. Spring JPA + Hibernate 範例說明
+### 2. [Spring JPA + Hibernate 範例說明](https://matthung0807.blogspot.com/2019/05/spring-boot-2-spring-data-jpa-mysql-8.html "範例教學網頁")
 ### 3. 練習 -- 使用 Spring JPA + Hibernate 建立一個學生資料表
