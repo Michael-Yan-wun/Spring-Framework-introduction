@@ -21,6 +21,15 @@
 		// Perform a rollback of the given transaction（對執行的交易進行回滾）
 		Void rollback(TransactionStatus status) throws TransactionException;  
 	}
-
+## Spring支援兩種方式的事務管理：
 ### 1. 編程式的交易管理
+#### 通過Transaction Template手動管理交易，實際應用中很少使用
 ### 2. 宣告式的交易管理
+#### 推薦使用（程式碼侵入性最小），實際是通過 AOP 實現
+#### 實現宣告式交易的四種方式：
+##### (1)基於 TransactionInterceptor 的宣告式交易: Spring 宣告式交易的基礎，通常也不建議使用這種方式，但是與前面一樣，瞭解這種方式對理解 Spring 宣告式事務有很大作用。
+##### (2)基於 TransactionProxyFactoryBean 的宣告式交易: 第一種方式的改進版本，簡化的配置檔案的書寫，這是 Spring 早期推薦的宣告式交易管理方式，但是在 Spring 2.0 中已經不推薦了。
+##### (3)基於< tx> 和< aop>名稱空間的宣告式交易管理： 其最大特點是與 Spring AOP 結合緊密，可以充分利用切點表示式的強大支援，使得管理交易更加靈活。
+##### (4)基於 @Transactional 的全註解方式： 將宣告式交易管理簡化到了極致。開發人員只需在配置檔案中加上一行啟用相關後處理 Bean 的配置，然後在需要實施交易管理的方法或者類上使用 @Transactional 指定交易規則即可實現交易管理，而且功能也不必其他方式遜色。
+
+
